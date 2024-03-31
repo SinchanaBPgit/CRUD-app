@@ -1,0 +1,95 @@
+.title-box {
+    background-color: #CCCCCC;
+    padding: 20px;
+}
+
+.manage-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button {
+    background-color: green;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.alert-box {
+    margin-top: 20px;
+}
+
+.table-box {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.edit-button {
+    background-color: yellow;
+    color: #000000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.delete-button {
+    background-color: red;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.form-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.submit-button {
+    background-color: green;
+    color: #FFFFFF;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: 8px;
+    text-align: left;
+
+}
+
+.table td {
+    padding: 8px;
+    text-align: left;
+
+}
+
+.table td:nth-child(1) { 
+    text-align: center;
+    width: 50px; 
+}
+
+.table td:first-child(1) { 
+    text-align: left;
+    width: 50px; 
+}
