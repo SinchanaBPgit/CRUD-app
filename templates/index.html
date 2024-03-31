@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="table-box">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for employee in employees %}
+                    <tr>
+                        <td>{{ employee.id }}</td>
+                        <td>{{ employee.name }}</td>
+                        <td>{{ employee.email }}</td>
+                        <td>{{ employee.phone }}</td>
+                        <td>
+                            <a href="/update/{{ employee.id }}" class="edit-button">Edit</a>
+                            <a href="/delete/{{ employee.id }}" class="delete-button">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td>1</td>
+                    <td>Michael Smith</td>
+                    <td>michael@example.com</td>
+                    <td>555-123-4567</td>
+                    <td>
+                        <a href="#" class="edit-button">Edit</a>
+                        <a href="#" class="delete-button">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Emily Johnson</td>
+                    <td>emily@example.com</td>
+                    <td>555-987-6543</td>
+                    <td>
+                        <a href="#" class="edit-button">Edit</a>
+                        <a href="#" class="delete-button">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>David Brown</td>
+                    <td>david@example.com</td>
+                    <td>555-456-7890</td>
+                    <td>
+                        <a href="#" class="edit-button">Edit</a>
+                        <a href="#" class="delete-button">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
